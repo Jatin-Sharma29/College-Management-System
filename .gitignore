@@ -26,6 +26,16 @@ bin/
 ### VS Code ###
 .vscode/
 
+### IntelliJ ###
+.idea/
+.run/
+*.iml
+
+### Java / Maven ###
+target/
+*.class
+*.log
+
 ### Mac OS ###
 .DS_Store
 # Java / Maven
