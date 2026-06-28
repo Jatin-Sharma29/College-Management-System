@@ -3,6 +3,8 @@ import service.*;
 import repository.*;
 import model.*;
 import java.util.*;
+import util.InputUtil;
+
 public class Main {
     public static void main(String[] args){
         Scanner sc=new Scanner(System.in);
@@ -19,6 +21,7 @@ public class Main {
         TeacherService teacherService=new TeacherService(teacherRepo,userRepo);
         ParentService parentService=new ParentService(parentRepo,userRepo);
         MarksService marksService=new MarksService(marksRepo);
+        Menu menu=new Menu(studentService,teacherService,parentService,marksService);
 
         int attempts =3;
         User user=null;
@@ -27,8 +30,7 @@ public class Main {
                 System.out.println("\n==================== LOGIN ====================");
                 System.out.print("Enter Username: ");
                 String username= sc.nextLine();
-                System.out.print("Enter Password: ");
-                String password=sc.nextLine();
+                String password=InputUtil.getPasswordInput("Enter Password: ");
                 user=userService.login(username,password);
                 if(user!=null){
                     System.out.println("Login Successful!!! Role: "+user.getRole());
@@ -39,13 +41,13 @@ public class Main {
                 }
             }catch (Exception e){
                 System.out.println("Error: "+e.getMessage());
+
             }
         }
         if(user==null){
             System.out.println("Too Many Failed attempts. Exiting.....");
             return;
         }
-        Menu menu=new Menu(studentService,teacherService,parentService,marksService);
         Role role=user.getRole();
         switch (role){
             case ADMIN :

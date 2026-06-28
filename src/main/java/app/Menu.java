@@ -2,6 +2,7 @@ package app;
 import service.*;
 import model.*;
 
+
 import java.util.Scanner;
 
 public class Menu {
@@ -38,6 +39,7 @@ public class Menu {
             }
         }
     }
+
 
     private String getStringInput(String msg) {
         System.out.print(msg);
