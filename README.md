@@ -226,5 +226,7 @@ Some possible enhancements include:
 # Author
 
 **Jatin Sharma**
+#Credits
+**Anirudh Gupta**
 
 Thank you for checking out this project. Feedback and contributions are always welcome.
