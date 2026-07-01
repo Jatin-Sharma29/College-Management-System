@@ -60,12 +60,11 @@ College-Management-System
 ├── src/
 │   └── main/
 │       └── java/
-│           ├── app
-│           ├── repository 
+│           ├── app/
+│           ├── repository/
 │           ├── model/
 │           ├── service/
-│           ├── util
-│
+│           ├── util/
 ├── database.sql
 ├── pom.xml
 ├── run.bat
