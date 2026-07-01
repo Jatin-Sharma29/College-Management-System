@@ -223,7 +223,7 @@ Some possible enhancements include:
 
 ---
 
-# Author
+# Authors
 
 **Jatin Sharma** \
 **Anirudh Gupta** \
