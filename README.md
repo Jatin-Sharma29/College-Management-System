@@ -60,12 +60,11 @@ College-Management-System
 ├── src/
 │   └── main/
 │       └── java/
-│           ├── config/
-│           ├── dao/
+│           ├── app
+│           ├── repository 
 │           ├── model/
 │           ├── service/
-│           ├── ui/
-│           └── Main.java
+│           ├── util
 │
 ├── database.sql
 ├── pom.xml
